@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	margin: 0 auto;
+}
+
+body {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a {
+	text-decoration: none;
+	color: #8F0338;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+
+.header {
+	background-color: #540032;
+	width: 100%;
+	text-align: right;
+}
+
+.name {
+	background-color: #C9283E;
+	text-align: center;
+	width: 30%;
+	border: 1px solid #F2EEEF;
+}
+
+#about-me {
+	background-color: #F2EEEF;
+	width: 650px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	float: left;
+}
+
+#portfolio {
+	background-color: #F2EEEF;
+	width: 650px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	float: left;
+}
+
+#contact {
+	background-color: #F2EEEF;
+	width: 650px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	float: left;
+}
+
+#about-head, #portfolio-head, #contact-head, #connect-head {
+	padding-top: 15px;
+}
+
+#headshot {
+	float: left;
+	margin-right: 15px;
+}
+
+#hangman {
+	float: left;
+	margin: 10px;
+}
+
+#rpg {
+	float: left;
+	margin: 10px;
+}
+
+#trivia {
+	float:left;
+	margin: 10px;
+}
+
+#rutgers {
+	float:left;
+	margin: 10px;
+}
+
+#rps {
+	float: left;
+	margin: 10px;
+}
+
+.connect {
+	background-color: #F2EEEF;
+	width: 270px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	float: right;
+}
+
+.push {
+	height: 50px;
+}
+
+footer {
+	background-color: #540332;
+	color: #8F0338;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+}
