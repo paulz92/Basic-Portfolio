@@ -5,49 +5,53 @@
 	<title>Contact Paul Zavattieri</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body background="assets/images/background-darkwood.png">
-
-<div class="wrapper">
-	
-	<header class="header">
-		<div class="name">
-			<h1>Paul Zavattieri</h1>
+<body>	
+	<!--header has its own header wrap for the purpose of having the background color stretch the length of the browser window and background/width/height properties-->
+	<header class="header-wrap">
+		<!--header content has its own class so that the actual content of the header can be limited to the 960px width to match the body-->
+		<div class="header-content">
+			<!--name heading has its own class so that it can be absolute positioned relative to the header-wrap and styled correctly-->
+			<div class="name">
+				<h1>Paul Zavattieri</h1>
+			</div>
+			<!--nav links has their own class to float it right and give it margin on top to center it vertically within the header-->
+			<div class="nav-links">
+				<a class="headlink" href="index.html">About Me</a>&ensp;|&ensp;
+				<a class="headlink" href="portfolio.html">Portfolio</a>&ensp;|&ensp;
+				<a class="headlink" href="contact.html">Contact</a>
+			</div>
 		</div>
-		<a href="index.html">About Me</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Contact</a>
 	</header>
 
 	<br>
-	<div>
-		<div id="contact">
-			<h1 id="contact-head">Contact</h1>
+	
+	<!--wrapping the content so that I can style it with the appropriate width. also, so that I can add overflow: auto in css so that the footer is pushed to the bottom for page on the portfolio and contact pages-->
+	<div class="content">
+		<section id="contact">
+			<h1>Contact</h1>
+			<hr>
 			<form action="mailto:paulz92@gmail.com" method="post" enctype="text/plain"/>
-					Name<br>
-					<input type="text" name="Name" placeholder="John Smith"/><br>
-					Email<br>
-					<input type="text" name="Email Address" placeholder="example@gmail.com"/><br>
-					Message<br>
-					<textarea name="Message"></textarea><br>
-					<input id="submit" type="submit" value="Submit"/>
-
+				<p>Name</p>
+				<input type="text" name="Name" placeholder="John Smith"/><br>
+				<p>Email</p>
+				<input type="text" name="Email Address" placeholder="example@gmail.com"/><br>
+				<p>Message</p>
+				<textarea name="Message"></textarea><br>
+				<input id="submit" type="submit" value="Submit"/>
 			</form>
-		</div>
+		</section>
 
-		<div class="connect">
-			<h2 id="connect-head">Connect With Me</h2>
-			<a href="https://github.com/paulz92" target="_blank"><img src="assets/images/icon-github.png" alt="Github icon" width="50px"></a>
-			<a href="https://www.linkedin.com/in/paul-zavattieri-a119b059/" target="_blank"><img src="assets/images/icon-linkedin.png" alt="Linkedin icon" width="50px"></a>
-			<a href="https://stackoverflow.com/users/8469436/paul-zavattieri?tab=profile" target="_blank"><img src="assets/images/icon-stackoverflow.png" alt="Stackoverflow icon" width="50px"></a>
-		</div>
+		<aside class="connect">
+			<h1>Connect With Me</h1>
+			<hr>
+			<a id="icon-gh" href="https://github.com/paulz92" target="_blank"><img src="assets/images/icon-github.png" alt="Github icon" width="60px"></a>
+			<a id="icon-li" href="https://www.linkedin.com/in/paul-zavattieri-a119b059/" target="_blank"><img src="assets/images/icon-linkedin.png" alt="Linkedin icon" width="60px"></a>
+			<a id="icon-so" href="https://stackoverflow.com/users/8469436/paul-zavattieri?tab=profile" target="_blank"><img src="assets/images/icon-stackoverflow.png" alt="Stackoverflow icon" width="60px"></a>
+		</aside>
 	</div>
 
-	<div class="push"></div>
-</div>
-
-	<footer class="footer">
+	<footer>
 		<p>&copy; Copyright 2017 Paul Zavattieri</p>
 	</footer>
-
 </body>
 </html>

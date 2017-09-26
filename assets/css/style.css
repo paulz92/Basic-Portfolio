@@ -2,74 +2,77 @@
 	box-sizing: border-box;
 }
 
-html {
-	height: 100%;
-	margin: 0 auto;
-}
-
 body {
-	width: 960px;
-	height: 100%;
 	margin: 0 auto;
+	background-image: url(../images/background-darkwood.png);
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-a {
-	text-decoration: none;
-	color: #8F0338;
+h1, h2 {
+	color: #333032;
 }
 
-.wrapper {
-	min-height: 100%;
-	margin-bottom: -50px;
+hr {
+	border-top: 1.5px solid #716B6E;
+	border-bottom: 1.5px solid #716B6E;
+	margin-bottom: 30px;
 }
 
-.header {
-	background-color: #540032;
+.header-wrap {
+	background-color: #E0D4DA;
 	width: 100%;
-	text-align: right;
+	height: 85px;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+.header-content {
+	width: 960px;
+	margin: 0 auto;
 }
 
 .name {
-	background-color: #C9283E;
+	background-color: #333032;
 	text-align: center;
-	width: 30%;
-	border: 1px solid #F2EEEF;
+	width: 20%;
+	position: absolute;
+	bottom: 0;
+}
+
+.name h1 {
+	color: #E0D4DA;
+}
+
+.nav-links {
+	float: right;
+	margin-top: 34px;
+}
+
+.headlink {
+	text-decoration: none;
+	color: #333032;
+	font-size: 17px;
+}
+
+.content {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#contact h1, #portfolio h1, #about-me h1, .connect h1 {
+	margin-top: 0px;
 }
 
 #about-me {
-	background-color: #F2EEEF;
+	background-color: #E0D4DA;
 	width: 650px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 1px;
+	padding: 30px 30px 10px 30px;
 	float: left;
-}
-
-#portfolio {
-	background-color: #F2EEEF;
-	width: 650px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-	float: left;
-}
-
-#contact {
-	background-color: #F2EEEF;
-	width: 650px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-	float: left;
-}
-
-#about-head, #portfolio-head, #contact-head, #connect-head {
-	padding-top: 15px;
 }
 
 #headshot {
@@ -77,48 +80,101 @@ a {
 	margin-right: 15px;
 }
 
-#hangman {
+p {
+	color: #252324;
+}
+
+#portfolio {
+	background-color: #E0D4DA;
+	width: 650px;
+	padding: 30px 30px 0px 30px;
 	float: left;
-	margin: 10px;
 }
 
-#rpg {
+#hangman, #trivia, #rps {
 	float: left;
-	margin: 10px;
 }
 
-#trivia {
-	float:left;
-	margin: 10px;
-}
-
-#rutgers {
-	float:left;
-	margin: 10px;
-}
-
-#rps {
-	float: left;
-	margin: 10px;
-}
-
-.connect {
-	background-color: #F2EEEF;
-	width: 270px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
+#rpg, #rutgers {
 	float: right;
 }
 
-.push {
-	height: 50px;
+#hangman, #trivia, #rps, #rpg, #rutgers {
+	width: 280px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+h3 {
+	background-color: #333032;
+	color: #E0D4DA;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.img {
+	width: 100%;
+}
+
+#contact {
+	background-color: #E0D4DA;
+	width: 650px;
+	padding: 30px 30px 30px 30px;
+	float: left;
+}
+
+input {
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+}
+
+#submit {
+	background-color: #333032;
+	color: #E0D4DA;
+	width: 25%;
+	margin-top: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.connect {
+	background-color: #E0D4DA;
+	width: 270px;
+	padding: 25px 25px 25px 25px;
+	float: right;
+}
+
+#icon-gh {
+	float: left;
+	margin-right: 20px;
+}
+
+#icon-so {
+	float: right;
+}
+
+.wrap {
+	min-height: calc(100vh - 80px);
 }
 
 footer {
-	background-color: #540332;
-	color: #8F0338;
+	background-color: #716B6E;
 	text-align: center;
-	height: 50px;
 	width: 100%;
+	height: 50px;
+	margin: 30px 0px 0px 0px;
+	padding-top: 10px;
+	font-size: 10px;
+}
+
+footer p {
+	color: #E0D4DA;
 }
