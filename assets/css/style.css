@@ -25,9 +25,10 @@ hr {
 .header-wrap {
 	background-color: #E0D4DA;
 	width: 100%;
-	height: 85px;
+	height: 90px;
 	position: relative;
 	margin-bottom: 14px;
+	border-bottom: 2px solid #77A8AC;
 }
 
 .header-content {
@@ -39,8 +40,11 @@ hr {
 	background-color: #333032;
 	text-align: center;
 	width: 20%;
+	margin-bottom: 0px;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
+	border: 2px solid #77A8AC;
+	border-bottom: 1px solid #77A8AC;
 }
 
 .name h1 {
@@ -49,7 +53,11 @@ hr {
 
 .nav-links {
 	float: right;
-	margin-top: 34px;
+	margin-top: 36.5px;
+}
+
+span {
+	color: #77A8AC;
 }
 
 .headlink {
@@ -60,7 +68,7 @@ hr {
 
 .content {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 	overflow: auto;
 }
 
@@ -73,11 +81,13 @@ hr {
 	width: 650px;
 	padding: 30px 30px 10px 30px;
 	float: left;
+	border: 2px solid #77A8AC
 }
 
 #headshot {
 	float: left;
 	margin-right: 15px;
+	border: 1px solid #ACF3F8;
 }
 
 p {
@@ -89,6 +99,7 @@ p {
 	width: 650px;
 	padding: 30px 30px 0px 30px;
 	float: left;
+	border: 2px solid #77A8AC
 }
 
 #hangman, #trivia, #rps {
@@ -114,10 +125,12 @@ h3 {
 	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	border: 1px solid #ACF3F8;
 }
 
 .img {
 	width: 100%;
+	border: 1px solid #ACF3F8;
 }
 
 #contact {
@@ -125,12 +138,18 @@ h3 {
 	width: 650px;
 	padding: 30px 30px 30px 30px;
 	float: left;
+	border: 2px solid #77A8AC
+}
+
+#contact p {
+	margin-bottom: 8px;
 }
 
 input {
 	width: 100%;
 	height: 40px;
 	padding-left: 10px;
+	border: 1px solid #ACF3F8;
 }
 
 #submit {
@@ -138,11 +157,14 @@ input {
 	color: #E0D4DA;
 	width: 25%;
 	margin-top: 10px;
+	border: 1px solid #ACF3F8;
 }
 
 textarea {
 	width: 100%;
 	height: 200px;
+	border: 1px solid #ACF3F8;
+	margin-bottom: 20px;
 }
 
 .connect {
@@ -150,6 +172,7 @@ textarea {
 	width: 270px;
 	padding: 25px 25px 25px 25px;
 	float: right;
+	border: 2px solid #77A8AC
 }
 
 #icon-gh {
@@ -171,8 +194,9 @@ footer {
 	width: 100%;
 	height: 50px;
 	margin: 30px 0px 0px 0px;
-	padding-top: 10px;
+	padding-top: 6px;
 	font-size: 10px;
+	border-top: 8px solid #77A8AC;
 }
 
 footer p {
