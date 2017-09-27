@@ -6,14 +6,34 @@ body {
 	margin: 0 auto;
 	background-image: url(../images/background-darkwood.png);
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: normal; /*overrides reset.css line height for body*/
 }
 
+/*overriding reset.css header properties and using required font family*/
 h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    display: block;
 }
 
 h1, h2 {
 	color: #333032;
+}
+
+/*overriding reset.css h1 properties*/
+h1 {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+/*overriding reset.css h2 properties*/
+h2 {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
 }
 
 hr {
@@ -73,7 +93,7 @@ span {
 	overflow: auto;
 }
 
-#contact h1, #portfolio h1, #about-me h1, .connect h1 {
+#contact h2, #portfolio h2, #about-me h2, .connect h2 {
 	margin-top: 0px;
 }
 
@@ -88,12 +108,18 @@ span {
 #headshot {
 	float: left;
 	margin-right: 15px;
+	margin-bottom: 15px;
 	width: 200px;
 	border: 1px solid #096A72;
 }
 
 p {
 	color: #252324;
+	display: block; /*overriding reset.css with default values*/
+    margin-top: 1em; /*overriding reset.css with default values*/
+    margin-bottom: 1em; /*overriding reset.css with default values*/
+    margin-left: 0; /*overriding reset.css with default values*/
+    margin-right: 0; /*overriding reset.css with default values*/
 }
 
 #portfolio {
@@ -128,6 +154,9 @@ h3 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border: 1px solid #E0D4DA;
+    font-size: 1.17em; /*overriding reset.css with default values*/
+    margin-top: 1em; /*overriding reset.css with default values*/
+    margin-bottom: 1em; /*overriding reset.css with default values*/
 }
 
 .img {
