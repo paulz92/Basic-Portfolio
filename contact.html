@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact Paul Zavattieri</title>
+	<!--linking reset and style css sheets. reset css is first since it is lowest in priority-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -16,6 +17,7 @@
 				<h1>Paul Zavattieri</h1>
 			</div>
 			<!--nav links has their own class to float it right and give it margin on top to center it vertically within the header-->
+			<!--used span for inline styling. &ensp; adds extra space between words and | to separate the links and make them more aesthetically pleasing-->
 			<div class="nav-links">
 				<a class="headlink" href="index.html">About Me</a><span>&ensp;|&ensp;</span>
 				<a class="headlink" href="portfolio.html">Portfolio</a><span>&ensp;|&ensp;</span>
@@ -25,12 +27,13 @@
 	</header>
 
 	<br>
-	
-	<!--wrapping the content so that I can style it with the appropriate width. also, so that I can add overflow: auto in css so that the footer is pushed to the bottom for page on the portfolio and contact pages-->
+	<!--wrapping the content so that I can style it with the appropriate width. also, so that I can add overflow: auto in css so that the footer is pushed to the bottom-->
 	<div class="content">
+		<!--using section since this is a distinct section about my portolio, not just a container for css purposes-->
 		<section id="contact">
 			<h2>Contact</h2>
 			<hr>
+			<!--learned this from online. the action attribute ensures that when submit is clicked, it mails to my email address. post method hides sensitive data from appearing in url. doesn't quite work as I want it to. It does send you to wherever your default email app is so it takes you to an email client to click send and email me, but I would rather it automatically send the email when submit was clicked. then, it would be nice if a message would display and say 'thanks for the message!' or something like that. that's probably a bit more advanced than this assignment.-->
 			<form action="mailto:paulz92@gmail.com" method="post" enctype="text/plain">
 				<p>Name</p>
 				<input type="text" name="Name" placeholder="John Smith"/><br>
@@ -42,6 +45,7 @@
 			</form>
 		</section>
 
+		<!--using aside since this is a sidebar which will be present on all pages-->
 		<aside class="connect">
 			<h2>Connect With Me</h2>
 			<hr>
