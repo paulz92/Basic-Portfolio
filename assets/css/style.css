@@ -136,7 +136,7 @@ p {
 	border: 6px solid #096A72;
 }
 
-#hangman, #trivia, #rps {
+#hangman, #trivia, #train {
 	float: left;
 }
 
@@ -144,7 +144,7 @@ p {
 	float: right;
 }
 
-#hangman, #trivia, #rps, #crystal, #gif {
+#hangman, #trivia, #train, #crystal, #gif {
 	width: 280px;
 	position: relative; /*needed to absolute position the headings on top of the pictures*/
 	margin-bottom: 30px; /*see above note on portfolio padding. ensures nice bottom spacing between each div*/
